@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+       integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+       crossorigin="anonymous">
+       <link rel="stylesheet" href="css/style.css">
+       <title>Audio Player</title>
+    </head>
+    <body>
+        <div class="container">
+            <!--<h1>Audio Player</h1>-->
+            <div class="slider-container">
+                <img src="img/img.jpg" alt="image">
+                <div class="track-text">
+                    <h4 class="song-name">Power and Glory: A New Game</h4>
+                    <p class="artist-name">Tom Hedden</p>
+                </div>
+                <div id="seek-slider">
+                    <input type="range" value="0" id="seek-bar">
+                    <span class="current-time">00:00</span>
+                    <span class="song-duration">00:00</span>
+                </div>
+                <div id="volume-slider"> 
+                    <audio src="" id="music"></audio> 
+                    <i class="fa fa-volume-up" id="icon"></i>
+                    <input type="range" min="0" max="1" value="0.50" step="0.01" id="volume">
+                    <p id="volume-value">50%</p>
+                </div>
+                <div class="controls">
+                    <button id="previous"><i class="fas fa-step-backward"></i></button> 
+                    <button id="play"><i class="fas fa-play"></i></button> 
+                    <button id="next"><i class="fas fa-step-forward"></i></button>
+                </div>
+            </div>
+
+            <h4>Designed by <a href="https://geraldandrewsmedia.com/" target="_blank">Gerald Andrews Media</a></h4>
+        </div>
+
+        <script src="js/tracks.js"></script>
+        <script src="js/script.js"></script>    
+    </body>
+</html>
